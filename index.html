@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>クラウドファンディング テスト</title>
+</head>
+<body>
+<form action="post.php" method="POST">
+
+<img src="user_default.gif" style="float: left; margin: 20px;" />寄付をお願いします！<br />
+<br />
+手間暇かけて開発しております。<br />
+コーヒー代をお振り込みいただければ開発が進みます！<br />
+どうぞよろしくお願いいたします。<br />
+<br />
+お支払い手続き後、送信ボタンを押して下さい。<br />
+任意の金額をご入力ください：<input type="text" name="amount" value="1500" /><br />
+
+Yahoo!Fastpayで決済を行う場合は下記より支払い処理をお願いします。<br />
+<script
+    src="https://s.yimg.jp/images/wallet/fastpay/js/fastpay-v1.js" class="fastpay-button"
+    data-key="fUIvNpUlvnrHs3xVMtL6BUDz">
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('input:image').attr('src', 'button_kessai.jpg');
+});
+</script>
+</form>
+
+<div style="clear:both; font-weight: bolder;">※これはあくまでもテストです。<br />
+クレジットカード番号には 4242424242424242 のテストカードをお使い下さい。
+</div>
+</body>
+</html>
